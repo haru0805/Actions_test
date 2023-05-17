@@ -16,5 +16,5 @@ jobs:
 
     - name: Run shell script
       run: |
-        chmod +x ./script.sh
-        ./script.sh ${{ secrets.SAMPLE_1 }} ${{ secrets.SAMPLE_2 }} ${{ github.event.inputs.message }}
+        chmod +x ./actions_test.sh
+        ./actions_test.sh ${{ secrets.SAMPLE_1 }} ${{ secrets.SAMPLE_2 }} ${{ github.event.inputs.message }}
